@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="btn_lable">Button</string>
+    <string name="text1">Hello</string>
+    <string name="hibt_txt">Input your name</string>
+    <string name="lable_add1">+1 point</string>
+    <string name="lable_add2">+2 point</string>
+    <string name="lable_add3">+3 point</string>
+    <string name="btn_reset">Reset</string>
+    <string name="lable_score">0</string>
+</resources>
