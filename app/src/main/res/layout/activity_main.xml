@@ -11,7 +11,7 @@
 
    <EditText
        android:id="@+id/inp1"
-       android:text="输入你的身高（m）"
+       android:hint="输入你的身高（m）"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:layout_marginBottom="16dp"
@@ -19,7 +19,7 @@
        ></EditText>
     <EditText
         android:id="@+id/inp2"
-        android:text="输入你的体重(kg)"
+        android:hint="输入你的体重（kg）"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -38,6 +38,7 @@
         android:id="@+id/out"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:text="你的BMI是："
         android:textSize="35sp"/>
 
@@ -45,6 +46,7 @@
         android:id="@+id/suggestions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:text=""
         android:textSize="35sp"/>
 </LinearLayout>
