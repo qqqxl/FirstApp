@@ -47,6 +47,6 @@ public class First extends AppCompatActivity implements View.OnClickListener {
 
        // EditText inp =(EditText) findViewById(R.id.editTextText);
         String str = inp.getText().toString();
-        out.setText("Hello"+str);
+        out.setText("Welcome "+str);
     }
 }
