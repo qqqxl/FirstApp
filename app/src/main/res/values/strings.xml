@@ -8,4 +8,12 @@
     <string name="lable_add3">+3 point</string>
     <string name="btn_reset">Reset</string>
     <string name="lable_score">0</string>
+    <string name="btn_dollar">dollar</string>
+    <string name="btn_euro">euro</string>
+    <string name="btn_won">won</string>
+    <string name="rmb_show">Hello</string>
+    <string name="rmb_inp_tip">Input RMB</string>
+    <string name="config_lable">config</string>
+    <string name="btn_save">save rate</string>
+
 </resources>
