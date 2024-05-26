@@ -15,5 +15,6 @@
     <string name="rmb_inp_tip">Input RMB</string>
     <string name="config_lable">config</string>
     <string name="btn_save">save rate</string>
+    <string name="menu_lable">settings</string>
 
 </resources>

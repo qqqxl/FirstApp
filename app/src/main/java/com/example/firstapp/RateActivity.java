@@ -57,6 +57,10 @@ public class RateActivity extends AppCompatActivity {
     }
 
     public void clickOpen(View btn) {
+        openConfigActivity();
+    }
+
+    private void openConfigActivity() {
         //打开新的窗口
         Intent config = new Intent(this, ConfigActivity.class);
         //传递参数；
@@ -89,6 +93,20 @@ public class RateActivity extends AppCompatActivity {
 
         super.onActivityResult(requestCode, resultCode, data);
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.mymenu, menu);
+        return true;//说明当前页面具有菜单功能
+    }
+
+   @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item){
+        if(item.getItemId()==R.id.menu_set){
+          openConfigActivity();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }
 
 //    private void startActivity(Intent config, int i) {
