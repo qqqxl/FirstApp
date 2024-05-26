@@ -16,5 +16,8 @@
     <string name="config_lable">config</string>
     <string name="btn_save">save rate</string>
     <string name="menu_lable">settings</string>
+    <string name="text2">欢迎</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_register">注册</string>
 
 </resources>

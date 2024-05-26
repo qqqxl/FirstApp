@@ -6,7 +6,7 @@
         android:id="@+id/menu_set"
         android:icon="@drawable/settings_24"
         android:title="@string/menu_lable"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
     <item android:title="Item" />
     <item android:title="Item" />
 </menu>
