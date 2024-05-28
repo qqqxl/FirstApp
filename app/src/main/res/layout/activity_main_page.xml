@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#75DBE4"
+    android:orientation="vertical"
+    tools:context=".MainPageActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/jizhang_name"
+            android:textColor="#E8B16E"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            app:srcCompat="@android:drawable/ic_menu_search" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/main_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_below="@id/main_top"
+        android:divider="@color/snow"
+        android:dividerHeight="6dp"
+        android:scrollbars="none"
+        android:background="@color/cardview_light_background">
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/main_btn_more"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/baseline_toc_24"
+        android:background="@drawable/main_morebtn_bg"/>
+
+    <Button
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/main_btn_more"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toLeftOf="@id/main_btn_more"
+        android:background="@drawable/main_recordbtn_dg"
+        android:text="@string/btn_jiyibi"
+        android:textColor="@color/snow"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+</RelativeLayout>

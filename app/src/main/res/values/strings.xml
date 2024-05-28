@@ -19,5 +19,12 @@
     <string name="text2">欢迎</string>
     <string name="btn_login">登录</string>
     <string name="btn_register">注册</string>
+    <string name="lr_register">立即注册</string>
+    <string name="jizhang_name">困困记账</string>
+    <string name="btn_jiyibi">记一笔...</string>
+    <string name="mounth_out">本月支出\n</string>
+    <string name="mouth_in">本月收入</string>
+    <string name="budget" />
+    <string name="Excel">查看图表分析</string>
 
 </resources>

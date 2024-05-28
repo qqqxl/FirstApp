@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/btn_register"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animationCache="false"
@@ -34,9 +34,9 @@
         tools:layout_editor_absoluteX="-3dp">
 
         <EditText
-            android:id="@+id/editTextTextPassword2"
+            android:id="@+id/user_name"
             android:layout_width="290dp"
-            android:layout_height="47dp"
+            android:layout_height="58dp"
             android:layout_marginStart="84dp"
             android:layout_marginLeft="84dp"
             android:layout_marginTop="80dp"
@@ -48,9 +48,9 @@
             android:inputType="textPassword" />
 
         <EditText
-            android:id="@+id/editTextNumberPassword"
+            android:id="@+id/user_pwd"
             android:layout_width="284dp"
-            android:layout_height="45dp"
+            android:layout_height="63dp"
             android:layout_marginStart="84dp"
             android:layout_marginLeft="84dp"
             android:layout_marginTop="9dp"

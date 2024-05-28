@@ -6,6 +6,7 @@ import android.os.Looper;
 import android.os.Message;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -30,12 +31,13 @@ public class NetActivity extends AppCompatActivity implements Runnable{
 
     private static final String TAG = "Net";
     Handler handler;
+    TextView show;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_net);
-        //show = findViewById(R.id.net_show);
+        show = findViewById(R.id.net_show);
 
         handler=new Handler(Looper.myLooper()){
             @Override
@@ -43,8 +45,8 @@ public class NetActivity extends AppCompatActivity implements Runnable{
                 //处理返回
                 if (msg.what==5){
                     String str=(String) msg.obj;
-                    Log.i(TAG,"handleMessage:str="+ str);
-                   // show.setText(str);
+                    //Log.i(TAG,"handleMessage:str="+ str);
+                   show.setText(str);
                 }
                 super.handleMessage(msg);
             }
@@ -90,17 +92,20 @@ public class NetActivity extends AppCompatActivity implements Runnable{
             Document doc= Jsoup.connect("https://www.huilvzaixian.com/").get();
             Element table= doc.getElementsByTag("table").first();
             Elements rows =table.getElementsByTag("tr");
+
+            rows.remove(0);
             for(Element row : rows) {
-                Log.i(TAG, "run:row=" + row);
+               // Log.i(TAG, "run:row=" + row);
                 Elements tds = row.getElementsByTag("td");
                 Element td1 = tds.first();
                 Element td2 = tds.get(4);
                 Log.i(TAG,"run:td1="+td1.text()+"->"+td2.text());
                 //Log.i(TAG,"run:td1="+td1.html()+"->"+td2.html());
-                html +=(td1.text()+"->"+td2.text());
+                html +=(td1.text()+"=>"+td2.text()+"\n");
             }
+            //doc.select("body > div > div.wrap > div.money-box.money-box1");
             //doc.select("#app > ul > li:nth-child(6) > div.today-box-item.li-one");
-            Element td=doc.select("#app > ul > li:nth-child(2)").first();
+            Element td=doc.select("body > div > div.wrap > div.money-box.money-box1").first();
             Log.i(TAG,"run: 美元: "+td.text());
         }
         catch(MalformedURLException e){
@@ -112,7 +117,7 @@ public class NetActivity extends AppCompatActivity implements Runnable{
 
         }
         //发送消息
-        Message msg=handler.obtainMessage(5,"Hello");
+        Message msg=handler.obtainMessage(5,html);
         handler.sendMessage(msg);
     }
     private String inputStream2String(InputStream inputStream)throws IOException{

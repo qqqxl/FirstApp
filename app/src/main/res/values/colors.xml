@@ -9,5 +9,6 @@
     <color name="floralwhite">#FFFAF0</color> <!--花白色 -->
     <color name="lemonchiffon">#FFFACD</color> <!--柠檬绸色 -->
     <color name="cornsilk">#FFF8DC</color> <!--米绸色 -->
+    <color name="green">#006400</color>
 
 </resources>
