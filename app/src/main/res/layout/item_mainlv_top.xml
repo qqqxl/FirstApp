@@ -7,7 +7,7 @@
 
     <RelativeLayout
 
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/snow"
         android:padding="20dp">
@@ -16,80 +16,49 @@
             android:id="@+id/main_top_tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/mounth_out" />
+            android:text="@string/mounth_out"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/main_top_out"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@id/main_top_tv1"
             android:text="$ 0"
-            android:layout_below="@id/main_top_tv1"
-            android:textStyle="bold"
-            android:textSize="26sp"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/black" />
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/baseline_remove_red_eye_24"
-            android:layout_alignParentRight="true"
-            android:layout_alignTop="@id/main_top_out"/>
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/main_top_tv2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/main_top_out"
-            android:text="@string/mouth_in" />
+            android:text="@string/mouth_in"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/main_top_in"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/main_top_out"
+            android:layout_marginLeft="60dp"
             android:layout_toRightOf="@id/main_top_tv2"
             android:text="$ 0"
-            android:layout_marginLeft="5dp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
 
-        <TextView
-            android:id="@+id/mainlv_top_budget"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/main_top_tv2"
-            android:layout_alignParentRight="true"
-            android:text="$ 0"
             android:textColor="@color/black"
-            android:layout_marginLeft="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/budget"
-            android:id="main_top_tv3"
-            android:layout_toLeftOf="@id/mainlv_top_budget"
-            android:layout_alignBottom="@id/main_top_tv2"
-            />
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-        <TextView
-            android:id="main_top_tv4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/main_top_tv2"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:drawableLeft="@drawable/baseline_bar_chart_24"
-            android:text="@string/Excel"
-            android:textColor="@color/green"
-            android:drawablePadding="10dp"/>
+
     </RelativeLayout>
 
     <TextView
         android:id="@+id/main_top_tvday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="今日支出: $0 今日收入：$0"
+        android:text="今日支出: $ 0 今日收入：$ 0"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="10dp"/>

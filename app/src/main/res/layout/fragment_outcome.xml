@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <RelativeLayout
+        android:id="@+id/record_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/frag_record_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_view_list_24" />
+
+        <TextView
+            android:id="@+id/frag_record_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@id/frag_record_iv"
+            android:text="其他"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/frag_record_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/snow"
+            android:inputType="number" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/record_line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@id/record_top"
+        android:background="@color/snow"/>
+
+
+    <GridView
+        android:id="@+id/record_gv"
+        android:layout_width="match_parent"
+        android:layout_height="337dp"
+        android:layout_below="@id/record_line"
+        android:background="@color/blue"
+        android:numColumns="5"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
+
+    <android.inputmethodservice.KeyboardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/record_keyboard"
+        android:keyBackground="@color/blue"
+        android:keyTextColor="@color/black"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingTop="1dp"
+        android:layout_alignParentBottom="true"
+        android:shadowColor="@color/snow"
+        android:shadowRadius="0.0"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/record_keyboard"
+        android:background="@color/snow">
+
+        <TextView
+            android:id="@+id/recoerd_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:text="2024.05.28 " />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/record_beizhu"
+            android:text="添加备注"
+            android:layout_toLeftOf="@id/recoerd_time"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

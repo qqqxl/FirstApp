@@ -1,56 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_title_beizhu"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content       "
+    android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:padding="10dp"
-    android:background="@color/snow">
+    android:background="@color/snow"
+    android:padding="10dp">
+
     <ImageView
+        android:id="@+id/main_lv"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:id="@+id/main_lv"
-        android:background="@drawable/baseline_local_bar_24"
-        />
+         />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/main_lv"
         android:orientation="vertical">
+
         <TextView
+
+            android:id="@+id/item_main_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@id/main_lv_title"
             android:text="烟酒茶"
-            android:textStyle="bold"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
         <TextView
+
+            android:id="@+id/item_main_beizhu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@id/main_lv_title_beizhu"
+            android:layout_marginTop="5dp"
             android:text="华子一盒"
-            android:textSize="10sp"
-            android:layout_marginTop="5dp"/>
+            android:textSize="10sp" />
     </LinearLayout>
-    <LinearLayout
+
+    <TextView
+        android:id="@+id/item_money"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="11dp"
+        android:text="25.00"
+        android:textSize="20dp" />
 
-        android:orientation="vertical"
-        android:layout_alignParentRight="true">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@id/main_lv_title_money"
-            android:text="$25.0"
-            android:textStyle="bold"
-           />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@id/main_lv_title_time"
-            android:text="今天18：10"
-
-            android:layout_marginTop="5dp"/>
-    </LinearLayout>
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="14dp"
+        android:text="2024年6月5日" />
 
 </RelativeLayout>

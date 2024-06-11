@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/ac"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#75DBE4"
@@ -25,10 +25,11 @@
             android:textSize="18sp" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/main_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
+            android:onClick="onClick"
             android:padding="10dp"
             app:srcCompat="@android:drawable/ic_menu_search" />
     </RelativeLayout>
@@ -37,36 +38,39 @@
         android:id="@+id/main_lv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="10dp"
         android:layout_below="@id/main_top"
+        android:background="@color/cardview_light_background"
         android:divider="@color/snow"
         android:dividerHeight="6dp"
-        android:scrollbars="none"
-        android:background="@color/cardview_light_background">
-    </ListView>
+        android:padding="10dp"
+        android:scrollbars="none"></ListView>
 
-    <ImageButton
-        android:id="@+id/main_btn_more"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
-        android:src="@drawable/baseline_toc_24"
-        android:background="@drawable/main_morebtn_bg"/>
+        android:orientation="horizontal">
 
-    <Button
-        android:layout_width="127dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/main_btn_more"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
-        android:layout_marginBottom="1dp"
-        android:layout_toLeftOf="@id/main_btn_more"
-        android:background="@drawable/main_recordbtn_dg"
-        android:text="@string/btn_jiyibi"
-        android:textColor="@color/snow"
-        android:textStyle="bold"
-        android:gravity="center"/>
+        <Button
+            android:id="@+id/main_btn_edit"
+            android:layout_width="127dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/btn_jiyibi"
+            android:textColor="@color/snow"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/main_btn_acount"
+            android:layout_width="127dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onHistoryClick"
+            android:text="@string/btn_historyacount"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 </RelativeLayout>

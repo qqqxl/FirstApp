@@ -1,30 +1,19 @@
 <resources>
     <string name="app_name">FirstApp</string>
-    <string name="btn_lable">Button</string>
-    <string name="text1">Hello</string>
-    <string name="hibt_txt">Input your name</string>
-    <string name="lable_add1">+1 point</string>
-    <string name="lable_add2">+2 point</string>
-    <string name="lable_add3">+3 point</string>
-    <string name="btn_reset">Reset</string>
-    <string name="lable_score">0</string>
-    <string name="btn_dollar">dollar</string>
-    <string name="btn_euro">euro</string>
-    <string name="btn_won">won</string>
-    <string name="rmb_show">Hello</string>
-    <string name="rmb_inp_tip">Input RMB</string>
-    <string name="config_lable">config</string>
-    <string name="btn_save">save rate</string>
-    <string name="menu_lable">settings</string>
-    <string name="text2">欢迎</string>
-    <string name="btn_login">登录</string>
-    <string name="btn_register">注册</string>
-    <string name="lr_register">立即注册</string>
     <string name="jizhang_name">困困记账</string>
     <string name="btn_jiyibi">记一笔...</string>
     <string name="mounth_out">本月支出\n</string>
     <string name="mouth_in">本月收入</string>
-    <string name="budget" />
-    <string name="Excel">查看图表分析</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_beizhu">添加备注</string>
+    <string name="ensure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="beizhu"></string>
+    <string name="time_input">请输入时间</string>
+    <string name="btn_historyacount">历史账单</string>
+    <string name="his_head">历史账单</string>
+    <string name="his_btn_return">返回</string>
+
 
 </resources>
