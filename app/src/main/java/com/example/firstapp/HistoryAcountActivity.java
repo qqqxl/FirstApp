@@ -1,6 +1,8 @@
 package com.example.firstapp;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -38,6 +40,16 @@ public class HistoryAcountActivity extends AppCompatActivity {
         mDatas=new ArrayList<>();
         adapter = new AcountAdapter(this, mDatas);
         list.setAdapter(adapter);
+        //删除事件
+        list.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                AcountBean selected=mDatas.get(position);
+                mDatas.remove(position);
+                adapter.notifyDataSetChanged();
+                return true;
+            }
+        });
     }
     private void loadData() {
         List<AcountBean> list = DBManager.getOneMonthAccounnt(year,month);
@@ -48,5 +60,8 @@ public class HistoryAcountActivity extends AppCompatActivity {
         Calendar calendar = Calendar.getInstance();
         year=calendar.get(Calendar.YEAR);
         month=calendar.get(Calendar.MONTH)+1;
+
+
     }
+
 }

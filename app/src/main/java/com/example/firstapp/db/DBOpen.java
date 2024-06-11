@@ -29,17 +29,15 @@ public class DBOpen extends SQLiteOpenHelper {
     private void insertType(SQLiteDatabase db) {
         //向tb中插入
         String sql="insert into typetb(typename,notId,yesId,kind) values(?,?,?,?)";
-        db.execSQL(sql,new Object[]{"其他", R.drawable.baseline_list_hui,R.drawable.baseline_view_list_24,0});
+        db.execSQL(sql,new Object[]{"其他", R.drawble.baseline_view_list_24,R.drawable.baseline_view_list_24,0});
         db.execSQL(sql,new Object[]{"餐饮",R.drawable.dinner_hui, R.drawable.dinner,0});//支出为0
         db.execSQL(sql,new Object[]{"购物", R.drawable.shopping_hui,R.drawable.shopping,0});
         db.execSQL(sql,new Object[]{"水果",R.drawable.fruit_hui, R.drawable.frurit,0});
-        db.execSQL(sql,new Object[]{"零食", R.drawable.sugar_hui,R.drawable.sugar,0});
         db.execSQL(sql,new Object[]{"出行",R.drawable.air_hui, R.drawable.air,0});
         db.execSQL(sql,new Object[]{"衣服",R.drawable.cloth_hui, R.drawable.cloth,0});
         db.execSQL(sql,new Object[]{"学费",R.drawable.study_hui, R.drawable.study,0});
         db.execSQL(sql,new Object[]{"烟酒",R.drawable.baseline_local_bar_hui, R.drawable.baseline_local_bar_24,0});
         db.execSQL(sql,new Object[]{"住房",R.drawable.house_hui, R.drawable.house,0});
-        db.execSQL(sql,new Object[]{"通讯",R.drawable.massage_hui, R.drawable.massage,0});
         db.execSQL(sql,new Object[]{"宠物", R.drawable.chongwu_hui,R.drawable.other,0});
 
         db.execSQL(sql,new Object[]{"其他", R.drawable.baseline_list_hui,R.drawable.baseline_view_list_24,0});

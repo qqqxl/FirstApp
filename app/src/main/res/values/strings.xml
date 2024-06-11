@@ -5,15 +5,13 @@
     <string name="mounth_out">本月支出\n</string>
     <string name="mouth_in">本月收入</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="add_beizhu">添加备注</string>
     <string name="ensure">确定</string>
     <string name="cancel">取消</string>
     <string name="beizhu"></string>
-    <string name="time_input">请输入时间</string>
     <string name="btn_historyacount">历史账单</string>
     <string name="his_head">历史账单</string>
-    <string name="his_btn_return">返回</string>
+
 
 
 </resources>
